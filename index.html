@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="1:1 맞춤 침대 제작 전문 벨로센시(BELLOSENSI) – 비규격 사이즈, 조명·콘센트·수납까지 라이프스타일에 맞게 설계하는 프리미엄 핸드메이드 침대 브랜드." />
   <link rel="stylesheet" href="style.css" />
-  <!-- 웹폰트는 필요시 교체 -->
+  <!-- Pretendard -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
     <div class="container header-inner">
       <div class="logo">
         <span class="logo-main">BELLOSENSI</span>
-        <span class="logo-sub">UNIQUE PREMIUM ODERMADE CUSTOMIZING BED</span>
+        <span class="logo-sub no-wrap">UNIQUE PREMIUM ORDERMADE CUSTOMIZING BED</span>
       </div>
       <nav class="nav">
         <a href="#about">브랜드 소개</a>
@@ -34,15 +34,27 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- ================= HERO ================= -->
     <section class="hero" id="top" aria-labelledby="hero-title">
+      <!-- 배경 슬라이드 (부드러운 페이드) -->
+      <div class="hero-slider">
+        <div class="hero-slide active" style="background-image: url('images/hero1.png');"></div>
+        <div class="hero-slide" style="background-image: url('images/hero2.png');"></div>
+        <div class="hero-slide" style="background-image: url('images/hero3.png');"></div>
+        <div class="hero-slide" style="background-image: url('images/hero4.png');"></div>
+        <div class="hero-slide" style="background-image: url('images/hero5.png');"></div>
+      </div>
+
+      <!-- 어두운 오버레이 -->
       <div class="hero-overlay"></div>
+
+      <!-- 텍스트 -->
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="hero-eyebrow">Premium Bespoke Bed</p>
+          <p class="hero-eyebrow no-wrap">Premium Bespoke Bed</p>
           <h1 id="hero-title">
             단 한 분을 위한<br />
-            1:1 맞춤 침대, 벨로센시
+            <span class="no-wrap">1:1 맞춤 침대, 벨로센시</span>
           </h1>
           <p class="hero-desc">
             공간, 체형, 생활습관까지 고려해 설계하는 비규격 맞춤 침대.<br />
@@ -52,14 +64,14 @@
             <a href="#custom" class="btn primary">맞춤 제작 과정 보기</a>
             <a href="#contact" class="btn ghost">상담 예약하기</a>
           </div>
-          <p class="hero-subinfo">
+          <p class="hero-subinfo no-wrap">
             인천 남동구 쇼룸 운영 · 핸드메이드 제작 · 전국 배송
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ================= ABOUT ================= -->
     <section class="section" id="about">
       <div class="container section-inner two-col">
         <div class="section-text">
@@ -89,7 +101,8 @@
         </div>
         <div class="section-image-card" aria-label="벨로센시 쇼룸 및 특징">
           <div class="image-placeholder">
-            <img src="images/showroom.png" alt="벨로센시 맞춤 침대 쇼룸 풍경" />
+            <!-- ✅ 실제 쇼룸 사진 -->
+            <img src="images/showroom.png" alt="벨로센시 맞춤 침대 쇼룸 사진" />
           </div>
           <ul class="badge-list">
             <li>핸드메이드 제작</li>
@@ -101,7 +114,7 @@
       </div>
     </section>
 
-    <!-- PHILOSOPHY SECTION -->
+    <!-- ================= PHILOSOPHY ================= -->
     <section class="section section-alt" id="philosophy">
       <div class="container">
         <h2 class="section-title">벨로센시의 철학</h2>
@@ -140,7 +153,7 @@
       </div>
     </section>
 
-    <!-- FEATURES SECTION -->
+    <!-- ================= FEATURES ================= -->
     <section class="section" id="features">
       <div class="container">
         <h2 class="section-title">벨로센시만의 강점</h2>
@@ -200,55 +213,74 @@
       </div>
     </section>
 
-    <!-- CUSTOM PROCESS SECTION -->
+    <!-- ================= CUSTOM PROCESS ================= -->
     <section class="section section-alt" id="custom">
       <div class="container">
         <h2 class="section-title">맞춤 제작 프로세스</h2>
         <p class="section-subtitle">
-          상담부터 설치까지, 평균 2~4주 소요 · 일정은 제품 및 옵션에 따라 달라질 수 있습니다.
+          상담부터 설치까지, 평균 2~4주 소요 · 제품 구성과 시즌에 따라 일정이 달라질 수 있습니다.
         </p>
 
         <ol class="process-list">
-          <li>
-            <h3>1. 문의 및 기본 상담</h3>
+          <li class="process-step">
+            <div class="step-header">
+              <span class="step-number">1</span>
+              <h3>문의 및 기본 상담</h3>
+            </div>
             <p>
-              카카오톡, 전화, 네이버 스마트스토어 문의를 통해
-              <strong>희망 스타일, 예산, 설치 지역</strong> 등을 간단히 남겨주세요.
+              카카오톡, 전화, 스마트스토어 문의를 통해
+              <strong>희망 스타일·예산·설치 지역</strong> 등 기본 정보를 남겨주세요.
             </p>
           </li>
-          <li>
-            <h3>2. 공간 치수 및 사진 확인</h3>
+
+          <li class="process-step">
+            <div class="step-header">
+              <span class="step-number">2</span>
+              <h3>공간 치수 및 사진 확인</h3>
+            </div>
             <p>
-              방 크기, 창·문 위치, 콘센트, 기존 가구 배치를 확인할 수 있는
-              <strong>치수와 사진</strong>을 공유해 주시면, 최적 구조를 제안드립니다.
+              방의 가로·세로·높이, 창·문 위치, 콘센트, 기존 가구 위치가 보이도록
+              <strong>치수와 사진</strong>을 공유해 주시면 최적의 구조를 제안드립니다.
             </p>
           </li>
-          <li>
-            <h3>3. 설계안·견적 제안</h3>
+
+          <li class="process-step">
+            <div class="step-header">
+              <span class="step-number">3</span>
+              <h3>설계안 &amp; 견적 제안</h3>
+            </div>
             <p>
               헤드보드, 조명, 수납, 프레임 구조를 반영한
-              <strong>디자인 설계안과 견적</strong>을 보내드립니다.
+              <strong>맞춤 설계안과 견적</strong>을 상세히 안내드립니다.
             </p>
           </li>
-          <li>
-            <h3>4. 제작 진행</h3>
+
+          <li class="process-step">
+            <div class="step-header">
+              <span class="step-number">4</span>
+              <h3>핸드메이드 제작</h3>
+            </div>
             <p>
-              확정 후, 공방에서 <strong>핸드메이드 제작</strong>이 진행됩니다.
-              제작 기간 동안 중간 사진을 공유해 드릴 수 있습니다.
+              확정된 설계에 따라 공방에서 <strong>수작업 제작</strong>이 진행됩니다.
+              원하시면 제작 중간 사진도 공유해 드립니다.
             </p>
           </li>
-          <li>
-            <h3>5. 배송 및 설치</h3>
+
+          <li class="process-step">
+            <div class="step-header">
+              <span class="step-number">5</span>
+              <h3>배송·설치 및 안내</h3>
+            </div>
             <p>
-              일정 조율 후, 기사님이 직접 방문하여 <strong>배송·설치</strong>까지 진행합니다.
-              설치 후 사용 방법 안내와 관리 방법을 설명해 드립니다.
+              일정 조율 후 기사님이 직접 방문해 <strong>배송·설치</strong>를 진행합니다.
+              설치 후 사용 방법과 관리 요령을 함께 설명해 드립니다.
             </p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- GALLERY / CASE STUDIES -->
+    <!-- ================= GALLERY ================= -->
     <section class="section" id="gallery">
       <div class="container">
         <h2 class="section-title">제작 사례</h2>
@@ -264,6 +296,7 @@
               <span>헤드 상단 간접조명 + 양쪽 콘센트 &amp; USB 포트</span>
             </figcaption>
           </figure>
+
           <figure class="gallery-item">
             <img src="images/case-storage-bed.jpg" alt="하부 수납 서랍과 사이드 선반이 일체형인 맞춤 침대" />
             <figcaption>
@@ -271,6 +304,7 @@
               <span>하부 서랍 4칸 + 사이드 선반 일체형 구조</span>
             </figcaption>
           </figure>
+
           <figure class="gallery-item">
             <img src="images/case-low-attic.jpg" alt="낮은 천장 다락방에 맞춘 로우 타입 맞춤 침대" />
             <figcaption>
@@ -282,7 +316,7 @@
       </div>
     </section>
 
-    <!-- FAQ SECTION -->
+    <!-- ================= FAQ ================= -->
     <section class="section section-alt" id="faq">
       <div class="container">
         <h2 class="section-title">자주 묻는 질문</h2>
@@ -308,7 +342,7 @@
             <summary>전국 배송 및 설치가 가능한가요?</summary>
             <p>
               수도권은 기본적으로 배송·설치가 가능하며, 지방의 경우 일정 및 추가 비용이
-              발생할 수 있습니다. 설치 지역을 남겨주시면 안내해 드리겠습니다.
+              발생할 수 있습니다. 설치 지역을 남겨주시면 상세 안내를 드리겠습니다.
             </p>
           </details>
 
@@ -318,7 +352,6 @@
               기본적으로는 프레임 제작을 중심으로 진행되지만,
               보유 중인 매트리스 규격에 맞춰 설계하거나, 새로 구매 예정이신 경우
               <strong>추천 규격과 높이</strong>를 함께 상담해 드립니다.
-              필요 시 제휴 매트리스 안내도 도와드립니다.
             </p>
           </details>
 
@@ -333,7 +366,7 @@
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- ================= CONTACT ================= -->
     <section class="section" id="contact">
       <div class="container section-inner two-col">
         <div class="section-text">
@@ -345,7 +378,7 @@
           <ul class="contact-list">
             <li><strong>전화</strong> : 070-4651-5622</li>
             <li><strong>카카오톡</strong> : @벨로센시</li>
-            <li><strong>네이버 스마트스토어</strong> : <br />https://smartstore.naver.com/bellosensi_furniture/profile</li>
+            <li><strong>네이버 스마트스토어</strong> :<br />https://smartstore.naver.com/bellosensi_furniture/profile</li>
             <li><strong>쇼룸 주소</strong> : 인천광역시 남동구 독점로3번길 38-14 (로뎀2), 1층 101호</li>
           </ul>
           <p class="contact-note">
@@ -392,7 +425,7 @@
       </div>
       <div class="footer-right">
         <p class="footer-info">
-          사업자등록번호 5448802393 · 대표자 최이준 · 인천광역시 남동구 독점로3번길 38-14 (로뎀2) 1층 101호 (우 : 21565)
+          사업자등록번호 544-88-02393 · 대표자 최이준 · 인천광역시 남동구 독점로3번길 38-14 (로뎀2) 1층 101호 (우: 21565)
         </p>
         <p class="footer-copy">
           © BELLOSENSI. All rights reserved.
@@ -410,35 +443,24 @@
       nav.classList.toggle('nav-open');
     });
 
-    // 내비게이션 클릭 시 모바일 메뉴 닫기
     document.querySelectorAll('.nav a').forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('nav-open');
       });
     });
 
-    // =====================
-    // HERO 배경 슬라이드 (5초 간격)
-    // =====================
-    const hero = document.querySelector('.hero');
-    const heroImages = [
-      'images/hero1.png',
-      'images/hero2.png',
-      'images/hero3.png',
-      'images/hero4.png',
-      'images/hero5.png'
-    ];
+    // ======================
+    // HERO 슬라이드 (부드러운 페이드)
+    // ======================
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
 
-    let heroIndex = 0;
-
-    // 첫 이미지 설정 (혹시 CSS와 어긋나지 않게 한번 더 세팅)
-    if (hero) {
-      hero.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
-
+    if (heroSlides.length > 0) {
       setInterval(() => {
-        heroIndex = (heroIndex + 1) % heroImages.length;
-        hero.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
-      }, 5000); // 5000ms = 5초
+        heroSlides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % heroSlides.length;
+        heroSlides[currentSlide].classList.add('active');
+      }, 5000); // 5초 간격
     }
   </script>
 </body>
